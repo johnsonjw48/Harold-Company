@@ -10,8 +10,9 @@ class bienController{
   }
 
   
-  // function afficher(){
-  // 	$modele= new bienModele;
-  // 	$modele->afficher();
-  // }
+  function afficher(){
+  	$modele= new bienModele;
+  	
+    return $modele->afficher();
+  }
 }

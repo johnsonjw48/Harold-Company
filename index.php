@@ -46,7 +46,12 @@ if( isset($_GET['action']) ){
 
       case 'Louer':
      
-       include "Vues/header2.php";
+      $louer= $bienController->afficher();
+      // echo "<pre>";
+      // print_r($louer);
+      // echo "</pre>";
+      // die();
+      include "Vues/header2.php";
       include "Vues/Louer.php";
       break;
 
@@ -96,6 +101,8 @@ $b = new Bien($_POST);
 $bienController->insert($b);
   
 }
+
+
 
 
 

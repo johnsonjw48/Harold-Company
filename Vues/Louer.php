@@ -1,34 +1,3 @@
-<!-- Connexion à la database -->
-   
-   <?php 
-
-    
-  
-  $servername = 'localhost';
-  $ussername  = 'root';
-  $password   = 'root';
-
-
-  
-        $conn= new PDO ("mysql:host=$servername; dbname=hc", $ussername, $password);
-
-
-  
-        
-  $sql= "SELECT * FROM `bien`";
-
-
-  $stmt = $conn->query($sql);
-
-       
-        
-       //  echo "<pre>";
-       // print_r($louer);
-       // echo "</pre>";
-
-
-?>
-
 
     <center>
 	<h4 style="margin-top: 50px">Trouvez votre location grâce à Harold Company</h4>
@@ -43,16 +12,17 @@
 	<section id="possibilities">
             <div class="Alouer">
 
-                <?php while($louer = $stmt->fetch()) : ?>
-                    <article style="background-image: url(Public/images/<?= $louer['Image'] ?>);
+                <?php foreach($louer as $loue) : ?>
+                    <article style="background-image: url(Public/images/<?= $loue->getImage() ?>);
     background-position-y: -150px; margin-left: 150px; margin-bottom: 40px; ">
                     <div class="overlay">
-                        <h4><?php echo $louer['Annonce'];  ?></h4>
-                        <p><small><?php echo $louer['Description'] ;  ?></small></p>
+                        <h4><?php echo $loue->getAnnonce();  ?></h4>
+                        <p><small><?php echo $loue->getDescription() ;  ?></small></p>
                         <a href="" class="button-2">Plus d'info</a>
                     </div>
                 </article>
-                <?php endwhile; ?>
+                
+                <?php endforeach; ?>
 
                 
                

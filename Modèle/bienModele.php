@@ -25,7 +25,12 @@ class bienModele extends DB{
   	  $stmt3=$this->connect()->prepare($sql4);
      $stmt3->execute();
 
-     return $stmt3->fetchAll();
+     $tab=[];
+
+     while ($bien= $stmt3->fetch()) {
+        $tab[]= new Bien($bien);
+     }
+     return $tab;
 
     
 
