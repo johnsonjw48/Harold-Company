@@ -28,11 +28,27 @@ class bienModele extends DB{
      $tab=[];
 
      while ($bien= $stmt3->fetch()) {
-        $tab[]= new Bien($bien);
+        $b = new Bien($bien);
+        $b->setId($bien['Id_bien']);
+        $tab[]=$b;
      }
      return $tab;
 
     
+
+  }
+
+
+  function aff_details(){
+      
+      $idf=$_GET['id'];
+      $sql5= "SELECT * FROM `bien` WHERE `Id_bien`=$idf";
+      $stmt4=$this->connect()->prepare($sql5);
+      $stmt4->execute();
+
+      $details=$stmt4->fetch();
+      return $details;
+
 
   }
 

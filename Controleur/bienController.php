@@ -15,4 +15,10 @@ class bienController{
   	
     return $modele->afficher();
   }
+
+  function aff_details(){
+    $modele= new bienModele;
+    
+    return $modele->aff_details();
+  }
 }

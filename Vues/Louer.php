@@ -18,7 +18,7 @@
                     <div class="overlay">
                         <h4><?php echo $loue->getAnnonce();  ?></h4>
                         <p><small><?php echo $loue->getDescription() ;  ?></small></p>
-                        <a href="" class="button-2">Plus d'info</a>
+                        <a href="index.php?action=Infos&id=<?= $loue->getId(); ?>" class="button-2">Plus d'info</a>
                     </div>
                 </article>
                 

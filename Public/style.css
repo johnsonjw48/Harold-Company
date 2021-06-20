@@ -188,6 +188,30 @@ header nav ul li a
     float: left;
     border-radius: 10px;
 }
+
+
+#desc{
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1000px;
+    height: 300px;
+   /* float: left;*/
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+#desc p{
+    font-family: georgia;
+    font-size: 20px;
+    text-align: justify;
+    margin: 30px;
+}
+
+#desc h4{
+    color: green;
+}
+
 #possibilities article:first-child{
     margin-right: 20px;
 }

@@ -47,11 +47,12 @@ if( isset($_GET['action']) ){
       case 'Louer':
      
       $louer= $bienController->afficher();
+
+      include "Vues/header2.php";
       // echo "<pre>";
       // print_r($louer);
       // echo "</pre>";
       // die();
-      include "Vues/header2.php";
       include "Vues/Louer.php";
       break;
 
@@ -63,6 +64,16 @@ if( isset($_GET['action']) ){
       case 'Inscription':
        include "Vues/header.php";
       include "Vues/Inscription.php";
+      break;
+
+      case 'Infos':
+      
+   $infos= $bienController->aff_details();
+      echo "<pre>";
+      print_r($infos);
+      echo "</pre>";
+      include "Vues/header.php";
+      include "Vues/Infos.php";
       break;
 
 

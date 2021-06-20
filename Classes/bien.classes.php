@@ -26,6 +26,10 @@ function __construct(array $data){
         return $this->id;
     }
 
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
     /**
      * @return mixed
      */
