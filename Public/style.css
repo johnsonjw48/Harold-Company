@@ -201,6 +201,23 @@ header nav ul li a
     background-color: #efefef;
 }
 
+#interesse{
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1000px;
+    height: 500px;
+   /* float: left;*/
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+#interesse h4{
+    font-family: georgia;
+    padding-top: 10px;
+    font-style: italic;
+}
+
 #aperçu{
     margin-top: 70px;
     margin-bottom: 70px;
@@ -213,20 +230,59 @@ header nav ul li a
 
 #aperçu h4{
     color: green;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-style: italic;
+
 }
 
-#aperçu div{
+#aperçu section{
     text-align: justify;
-    font-size: 20px;
+    font-size: 30px;
     font-family: georgia;
-    margin: 30px;
+    margin: 50px;
+    display: inline-block;
+    font-style: italic;
 }
 
-#aperçu div p{
+#aperçu section p{
     font-size: 20px;
     font-family: georgia;
+    text-align: center;
 }
+
+#details{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1000px;
+    height: 150px;
+   /* float: left;*/
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+#details h4{
+    color: green;
+    padding-top: 10px;
+    font-style: italic;
+
+}
+
+#details section{
+    text-align: justify;
+    font-size: 30px;
+    font-family: georgia;
+    margin: 50px;
+    display: inline-block;
+    font-style: italic;
+}
+
+#details section p{
+    font-size: 20px;
+    font-family: georgia;
+    text-align: center;
+}
+
+
 
 
 
@@ -239,7 +295,7 @@ header nav ul li a
 
 
 #inf h1{
-    color: lightseagreen; 
+    
     margin-top: 70px;
     font-family: times new roman;
     margin-bottom: 70px;
@@ -251,6 +307,7 @@ header nav ul li a
 #desc h4{
     color: green;
     padding-top: 20px;
+    font-style: italic;
 }
 
 #possibilities article:first-child{

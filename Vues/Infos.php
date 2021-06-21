@@ -24,17 +24,32 @@
     <div id="aperçu">
       <h4>Aperçu</h4>
 
-      <div>
-        
-          <p>Publié le:</p> 
-       
-          <p>10 Mai 2021</p>
-      </div>
+      <section>
+         <h6>Publié le:</h6> 
+         <p>10 Mai 2021</p>
+      </section>
+
+
+      <section>
+        <h6>Ville:</h6> 
+        <p>Cotonou</p>
+      </section>
+
+
+      <section>
+        <h6>Quartier:</h6> 
+        <p>Ste Rita</p>
+      </section>
+
+
+      <section>
+        <h6>Disponibilité:</h6> 
+        <p>Immédiate</p>
+      </section>
+
 
     </div>
     
-
-
   </center>
 
 
@@ -53,7 +68,55 @@
 
     </div>
   </center>
+
+
+
+  <center>
+    <div id="details">
+      
+      <h4>Détails</h4>
+
+      <section>
+        <h6>Prix:</h6>
+        <p>700.000 FCFA /Mois</p>
+      </section>
+
+      <section>
+        <h6>Nb pièce:</h6>
+        <p>5</p>
+      </section>
+
+      <section>
+        <h6>Nb chambres:</h6>
+        <p>3</p>
+      </section>
+
+      <section>
+        <h6>Nb douches:</h6>
+        <p>5</p>
+      </section>
+
+
+
+
+
+    </div>
+  </center>
+
+
+  <center>
+    
+    <div id="interesse">
+
+      <h4>Etes vous intéressé? Si oui c'est par ici!</h4>
+      
+    </div>
+
+  </center>
+
+
 </div>
+
 
 
 
