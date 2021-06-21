@@ -69,9 +69,9 @@ if( isset($_GET['action']) ){
       case 'Infos':
       
    $infos= $bienController->aff_details();
-      echo "<pre>";
-      print_r($infos);
-      echo "</pre>";
+      // echo "<pre>";
+      // print_r($infos);
+      // echo "</pre>";
       include "Vues/header.php";
       include "Vues/Infos.php";
       break;

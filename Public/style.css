@@ -201,6 +201,35 @@ header nav ul li a
     background-color: #efefef;
 }
 
+#aperçu{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1000px;
+    height: 150px;
+   /* float: left;*/
+    border-radius: 10px;
+    background-color: #efefef;
+}
+
+#aperçu h4{
+    color: green;
+    padding-top: 20px;
+}
+
+#aperçu div{
+    text-align: justify;
+    font-size: 20px;
+    font-family: georgia;
+    margin: 30px;
+}
+
+#aperçu div p{
+    font-size: 20px;
+    font-family: georgia;
+}
+
+
+
 #desc p{
     font-family: georgia;
     font-size: 20px;
@@ -208,8 +237,20 @@ header nav ul li a
     margin: 30px;
 }
 
+
+#inf h1{
+    color: lightseagreen; 
+    margin-top: 70px;
+    font-family: times new roman;
+    margin-bottom: 70px;
+    text-align: center;
+    
+}
+
+
 #desc h4{
     color: green;
+    padding-top: 20px;
 }
 
 #possibilities article:first-child{
@@ -388,63 +429,51 @@ legend.scheduler-border {
 
 }
 
-
 .carousel {
-    position: relative;
-    width: 100%;
-    height: 45px;
-    text-align: center;
-    font-size: 50px;
-    line-height: 45px;
-    color: white;
-
-
+     align-items: center;
+     display: flex;
+     margin: 2rem auto;
+     position: relative;
+     width: 300px;
 }
-
-
-
-
-.carousel .changeHidden {
-
-    position: absolute;
-    top: 0;
-    left: 0%;
-   
-    height: 45px;
-    overflow: hidden;
-
+ .carousel__images {
+     align-items: center;
+     display: flex;
+     transform: translateX(0);
+     transition: transform 0.25s;
 }
-
-
-.carousel .changeHidden .contenant {
-
-    position: relative;
-    animation: carousel 8s ease-in-out infinite;
-
+ .carousel__images img {
+     border-radius: 5px;
+     height: 250px;
+     width: 250px;
 }
-
-
-.carousel .changeHidden .element {
-    display: block;
-    font-weight: 700;
-   
+ .carousel__images img.active {
+     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+     height: 300px;
+     width: 300px;
+     z-index: 1;
 }
-
-
-@keyframes carousel {
-    0%, 20% {
-        transform: translateY(0);
-    }
-    25%, 45% {
-        transform: translateY(-45px);
-    }
-    50%, 70% {
-        transform: translateY(-90px);
-    }
-    75%, 95% {
-        transform: translateY(-135px);
-    }
-    100% {
-        transform: translateY(-180px);
-    }
+ .carousel__button {
+     background: teal;
+     border: 0;
+     border-radius: 50%;
+     color: white;
+     cursor: pointer;
+     font-size: 1.5rem;
+     font-weight: bold;
+     height: 3rem;
+     opacity: 0.25;
+     position: absolute;
+     transition: opacity 0.25s;
+     width: 3rem;
+     z-index: 1;
+}
+ .carousel__button.previous {
+     left: 5px;
+}
+ .carousel__button.next {
+     right: 5px;
+}
+ .carousel__button:hover {
+     opacity: 0.5;
 }
