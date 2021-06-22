@@ -109,6 +109,31 @@
     <div id="interesse">
 
       <h4>Etes vous intéressé? Si oui c'est par ici!</h4>
+
+
+      <div id="rappel">
+        <h4>On vous appelle</h4>
+        <form>
+         <input type="text" name="nom" placeholder="Votre nom">
+         <input type="text" name="prenom" placeholder="Votre Prenom">
+         <input type="text" name="email" placeholder="Votre email">
+         <input type="tel" name="telephone" placeholder="Votre telephone">
+         <input type="submit" name="rappel" value="Rappel immediat">
+        </form>
+        
+      </div>
+
+
+      <div id="visit">
+       <h4>Venez visiter !</h4>
+        <form>
+         <input type="text" name="nom" placeholder="Votre nom">
+         <input type="date" name="jour" placeholder="Jour de visite">
+         <input type="time" name="heure" placeholder="Heure de visite">
+         <input type="tel" name="telephone" placeholder="Votre telephone">
+         <input type="submit" name="rappel" value="Soumettre">
+        </form>
+      </div>
       
     </div>
 
@@ -117,6 +142,30 @@
 
 </div>
 
+
+       <center>
+            <h3 style="font-family: Arial;">Vous pourriez apprécier aussi</h3>
+        </center>
+
+        <section id="possibilities">
+            <div class="wrapper">
+                <article id="possibility-1">
+                    <div class="overlay">
+                        <h4>A louer a Cotonou</h4>
+                        <p><small>Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux !</small></p>
+                        <a href="" class="button-2">Plus d'info</a>
+                    </div>
+                </article>
+                <article id="possibility-2">
+                    <div class="overlay">
+                        <h4>A louer a Calavi</h4>
+                        <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</small></p>
+                        <a href="" class="button-2">Plus d'info</a>
+                    </div>
+                </article>
+                <div class="clear"></div>
+            </div>
+        </section>
 
 
 
