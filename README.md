@@ -5,7 +5,8 @@
 
 ### Fonctionnalités du site : 
 
-* Système d'inscription et connexion : chaque utilisateur s’identifie avec son login et mot de passe. Si le système le reconnait en tant que q'admin, il aura alors les accès correspondants.
+#### Pour tous
+Système d'inscription et connexion : chaque utilisateur s’identifie avec son login et mot de passe. Si le système le reconnait en tant que q'admin, il aura alors les accès correspondants.
 
 #### Pour l'admin (le gerant du site)
 1. Déposer une annonce 
