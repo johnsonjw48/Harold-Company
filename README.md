@@ -25,6 +25,33 @@ Système d'inscription et connexion : chaque utilisateur s’identifie avec son 
 Ce projet est fait en programmation orientée objet (POO) et structurer en MVC (Modèle, Vue Contrôleur).
 
 
-### Bref apperçu de l'entreprise : 
+### Technologies utilisées : 
+
+##### Front end:  
+
+* HTML
+* CSS
+* JavaScript
+* jQuerry
+
+##### Back end: 
+
+* PHP
+* MySQL
+
+
+La validation des formulaires (inscription et connexion) côté client est  faite en JavaScript. Je me suis protégé des failles XSS et injection SQL par hachage de mot de passe. Si un utilisateur est connecté, son prénom et son nom sont sur le header durant toute la navigation. 
+
+Sur  la page d’accueil sont listé les dernières annonces déposées par l'admin. 
+
+
+
+### Comment lancer le projet? 
+
+Accéder au dossier dans lequel les fichiers ont été stocké via votre navigateur web en passant par vos serveurs.
+
+
+
+### Bref apperçu de Harold Company : 
 
 "HAROLD COMPANY" est une entreprise immobilière basé au Bénin. Elle permet aux usagers de pouvoir confier à une entreprise de confiance la gestion de leurs besoins immobiliers. Les services offerts sont entre autres, la construction de biens immobiliers, la gestion de la vente d’appartement, de maison, de studio ou autres et l’aide à trouver un bien immobiliers selon les besoins du client. Plusieurs entreprises concurrentielles sont sur le marché. HAROLD COMPANY se distingue de ses entreprises par ses efforts constant à digitaliser et numériser ses outils pour créer un espace de confort à ses clients.
